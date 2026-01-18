@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+  <title>Question 3</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("images/park.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+</head>
+<body>
+<audio id="bgm" loop>
+  <source src="audios/floatinggarden.mp3" type="audio/mpeg">
+</audio>
+
+<div class="progress">
+  <div class="bar" style="width: 75%"></div>
+</div>
+
+<div class="card">
+  <h2>Q3: What kind of food do you love?</h2>
+
+  <button onclick="playClick(); saveAnswer('city')">Trendy restaurants</button>
+  <button onclick="playClick(); saveAnswer('heartland')">Hawker food</button>
+  <button onclick="playClick(); saveAnswer('nature')">Healthy & organic</button>
+  <button onclick="playClick(); saveAnswer('coastal')">Seafood</button>
+  <button onclick="playClick(); saveAnswer('trendy')">Cafés & brunch</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

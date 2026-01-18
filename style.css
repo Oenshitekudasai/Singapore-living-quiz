@@ -1,0 +1,155 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #8ab374, #4f7b5a);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f7b5a;
+}
+
+
+.card {
+  background: #fdf7ef;
+  width: 90%;
+  max-width: 420px;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(79, 123, 90, 0.35);
+  text-align: center;
+  animation: popIn 0.6s ease;
+}
+
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #4f7b5a;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #8ab374;
+}
+
+
+p {
+  font-size: 15px;
+  color: #4f7b5a;
+  margin-bottom: 20px;
+}
+
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4f7b5a, #8ab374);
+  color: #fdf7ef;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #b54d36, #992800);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(153, 40, 0, 0.4);
+}
+
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ===== Result Image ===== */
+#areaImg {
+  width: 100%;
+  border-radius: 14px;
+  margin: 15px 0;
+}
+
+/* ===== SVG Map ===== */
+/* SVG Map */
+.map-container {
+  margin-top: 20px;
+}
+
+/* Regions */
+.region {
+  fill: #8ab374;
+  stroke: #4f7b5a;
+  stroke-width: 2;
+  transition: transform 0.6s ease, fill 0.3s ease;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.region.active {
+  fill: #b54d36;
+  stroke: #992800;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px rgba(153, 40, 0, 0.6));
+}
+
+
+/* Labels */
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  fill: #4f7b5a;
+  text-anchor: middle;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+
+/* Dim other regions */
+.dim {
+  opacity: 0.35;
+}
+
+
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* ===== Index.html ONLY background ===== */
+.index-page {
+  background-image: url("images/map-of-singapore.jpg");
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+

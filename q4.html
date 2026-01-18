@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+  <title>Question 4</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("images/hdb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+</head>
+<body>
+<audio id="bgm" loop>
+  <source src="audios/floatinggarden.mp3" type="audio/mpeg">
+</audio>
+
+<div class="progress">
+  <div class="bar" style="width: 100%"></div>
+</div>
+
+<div class="card">
+  <h2>Q4: Your preferred transport?</h2>
+
+  <button onclick="playClick(); saveAnswer('city')">MRT everywhere</button>
+  <button onclick="playClick(); saveAnswer('heartland')">Bus near home</button>
+  <button onclick="playClick(); saveAnswer('nature')">Walking</button>
+  <button onclick="playClick(); saveAnswer('coastal')">Cycling</button>
+  <button onclick="playClick(); saveAnswer('trendy')">Grab / MRT</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+  <title>Question 1</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("images/q1.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+</head>
+<body>
+<audio id="bgm" loop>
+  <source src="audios/floatinggarden.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="progress">
+  <div class="bar" style="width: 25%"></div>
+</div>
+
+<div class="card">
+  <h2>Q1: What do you enjoy most?</h2>
+
+  <button onclick="playClick(); saveAnswer('city')">Shopping & nightlife</button>
+  <button onclick="playClick(); saveAnswer('heartland')">Hawker food & community</button>
+  <button onclick="playClick(); saveAnswer('nature')">Green spaces & quiet</button>
+  <button onclick="playClick(); saveAnswer('coastal')">Beach & cycling</button>
+  <button onclick="playClick(); saveAnswer('trendy')">Cafés & arts</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
